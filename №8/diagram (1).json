@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 200, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-neopixel-matrix",
+      "id": "matrix1",
+      "top": 0,
+      "left": 200,
+      "attrs": { "cols": "8", "rows": "8" }
+    }
+  ],
+  "connections": [
+    [ "matrix1:DIN", "uno:6", "green", [] ],
+    [ "matrix1:VCC", "uno:5V", "red", [] ],
+    [ "matrix1:GND", "uno:GND.2", "black", [] ]
+  ],
+  "dependencies": {}
+}
